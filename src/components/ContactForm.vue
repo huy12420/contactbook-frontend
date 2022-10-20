@@ -27,7 +27,9 @@
             </label>
         </div>
         <div class="form-group">
-            <button class="btn btn-primary">Lưu</button>
+            <button class="btn btn-primary">Lưu</button><br> 
+            <hr>
+            <button class="btn btn-primary" @click="ContactBookVue">Trở Lại</button>
             <button v-if="contactLocal.id" type="button" class="ml-2 btn btn-danger" @click="deleteContact">
                 Xóa
             </button>
@@ -37,6 +39,7 @@
 <script>
 import * as yup from 'yup';
 import { Form, Field, ErrorMessage } from 'vee-validate';
+import ContactBookVue from '@/views/ContactBook.vue';
 export default {
     components: {
         Form,

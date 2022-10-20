@@ -34,3 +34,8 @@ label {
 .error-feedback {
     color: red;
 }
+
+.dangnhap {
+    width: 600px;
+    margin: 10px auto;
+}
